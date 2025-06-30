@@ -36,10 +36,10 @@ const data = {
       tech: ["Next.js","Tailwind","MongoDB"],
       link: "https://github.com/galdiator/Chathub-ai" },
 
-    { name: "Algo-Viz",
-      desc: "Interactive algorithm visualiser for graphs & DP.",
-      tech: ["React","D3.js"],
-      link: "https://github.com/galdiator/AlgoViz" }
+    // { name: "Algo-Viz",
+    //   desc: "Interactive algorithm visualiser for graphs & DP.",
+    //   tech: ["React","D3.js"],
+    //   link: "https://github.com/galdiator/AlgoViz" }
   ],
 
   achievements: [
