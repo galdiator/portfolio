@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhairya Kalra · Full-Stack Developer</title>
+  <meta name="description" content="Full-Stack Developer & AI enthusiast from New Delhi." />
+  <meta name="keywords" content="Dhairya Kalra, Portfolio, AI, DeepSeek R1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header & nav -->
+  <header class="header">
+    <nav class="nav container">
+      <a class="nav__logo" href="#home">DK</a>
+      <ul class="nav__list" id="nav-menu">
+        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#education">Education</a></li>
+        <li><a class="nav__link" href="#experience">Experience</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#achievements">Achievements</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <button id="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sections injected by JS -->
+  <main id="content">
+    <div class="loading">
+      <div class="loading-spinner"></div>
+      <p>Loading portfolio…</p>
+    </div>
+  </main>
+
+  <!-- Floating chatbot -->
+  <button id="chat-open" class="chat-button" aria-label="Open chatbot">💬</button>
+  <section class="chatbot" id="chatbot" aria-live="polite">
+    <header class="chat-header">
+      <div class="chat-title">
+        <h3>AI Assistant</h3>
+        <p>Ask me about Dhairya!</p>
+      </div>
+      <button id="chat-close" class="chat-close" aria-label="Close chat">✕</button>
+    </header>
+    <div class="chat__messages" id="chat-messages">
+      <div class="msg assistant">
+        Hi there 👋 I’m powered by DeepSeek R1. Ask anything about Dhairya’s work or skills!
+      </div>
+    </div>
+    <form id="chat-form" class="chat-form">
+      <textarea id="chat-input" rows="1" placeholder="Type your question…" required></textarea>
+      <button type="submit" class="chat-send">Send →</button>
+    </form>
+  </section>
+
+  <div class="bg-elements">
+    <div class="bg-circle bg-circle-1"></div>
+    <div class="bg-circle bg-circle-2"></div>
+    <div class="bg-circle bg-circle-3"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
